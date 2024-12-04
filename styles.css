@@ -64,5 +64,43 @@ body{
 
 ul{
 list-style-type: none;
+}
 
+
+a{
+text-decoration: none;
+color: var(--text-color-secondary);
+transition: color 0.3s ease-in-out;
+}
+
+a:hover{
+    color: var(--text-color-secondary);
+}
+
+.material-icons-sharp{
+    vertical-align: middle;
+}
+
+.text-primary{
+    color: var(--text-color-primary);
+}
+.text-secondary{
+    color: var(--text-color-secondary);
+}
+.text-third{
+    color: var(--text-color-third);
+}
+
+.dashboard-container{
+display: grid;
+grid-template-columns: 2fr 7fr 3fr;
+grid-template-areas: 'sidebar main extra';
+gap: 4rem;
+height: 100%;
+}
+
+
+.main-sidebar{
+grid-area: sidebar;
+background-color: blue;
 }
