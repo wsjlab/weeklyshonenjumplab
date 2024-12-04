@@ -94,7 +94,7 @@ a:hover{
 .dashboard-container{
 display: grid;
 grid-template-columns: 2fr 7fr 3fr;
-grid-template-areas: 'sidebar main extra';
+grid-template-areas: 'sidebar main extrabar';
 gap: 4rem;
 height: 100%;
 }
