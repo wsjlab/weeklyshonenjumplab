@@ -104,3 +104,8 @@ height: 100%;
 grid-area: sidebar;
 background-color: blue;
 }
+
+.main-container{
+    grid-area: main;
+    background-color: purple;
+}
