@@ -109,3 +109,8 @@ background-color: blue;
     grid-area: main;
     background-color: purple;
 }
+
+.extrabar{
+    grid-area: extrabar;
+    background-color: pink;
+}
