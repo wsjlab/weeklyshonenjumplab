@@ -198,9 +198,10 @@ padding: 20px 0 20px 16px;
     border: 1px solid var(--fuscha);
 }
 
-
+/*******************   Main *********************/
 .main-container{
 grid-area: main;
+padding: 20px 0;
 }
 
 .extrabar{
