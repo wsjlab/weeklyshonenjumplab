@@ -107,7 +107,7 @@ width: 320px;
 padding: 20px 0 20px 16px;
 }
 
-.main-sidebar{
+.main-sidebar .aside-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
