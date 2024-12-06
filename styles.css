@@ -165,7 +165,14 @@ padding: 20px 0 20px 16px;
 
 }
 
+.list-items .item a:active, .list-items .item a.active{
+  color: var(--text-color-primary);  
+  border-left:7px solid transparent;
+  border-left-color: var(--fuscha);
+  background-color: var(--desaturate-fuscha);
 
+
+}
 
 
 .main-container{
