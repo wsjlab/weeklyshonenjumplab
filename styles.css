@@ -113,9 +113,9 @@ padding: 20px 0 20px 16px;
     align-items: center;
 }
 .aside-header .brand{
-display: flex;
-align-items: center;
-padding-left: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
 }
 .brand img {
     width: 48px;
