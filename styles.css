@@ -4,11 +4,11 @@
 --white: #fff;
 --light:#f3f4ee;
 --fuscha: hsl(334, 94%, 57%);
---desaturate-fuscha: Ohsla(334, 94%, 57%, 0.15);
---desaturate-fuscha-2: Ohsla(334, 94%, 57%, 0.1);
+--desaturate-fuscha: hsla(334, 94%, 57%, 0.15);
+--desaturate-fuscha-2: hsla(334, 94%, 57%, 0.1);
 --cyan: hsl(184, 46%, 57%);
---desaturate-cyan: Ohsla(184, 46%, 57%, 0.25);
---desaturate-cyan-2: Ohsla(184, 46%, 57%, 0.15); 
+--desaturate-cyan: hsla(184, 46%, 57%, 0.25);
+--desaturate-cyan-2: hsla(184, 46%, 57%, 0.15); 
 --light-blue: #bbeef1;
 --pinkless: #fff3e0;
 --yellow: #f1b813;
