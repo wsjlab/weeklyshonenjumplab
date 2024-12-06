@@ -123,7 +123,7 @@ padding: 20px 0 20px 16px;
 }
 
 .brand h3{
-    font-size: 24px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -143,10 +143,27 @@ padding: 20px 0 20px 16px;
     width: 100%;
 }
 
-.list-items li:last-child{
+.list-items li:last-child {
     position: absolute;
     bottom: 4rem;
     width: 100%;
+}
+.list-items .item a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 4rem 16px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.list-items .item a:hover{
+    color: var(--fuscha);
+    transform: translateX(5%);
+
 }
 
 
