@@ -157,7 +157,7 @@ padding: 20px 0 20px 16px;
     padding: 16px 4rem 16px;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .list-items .item a:hover{
