@@ -202,7 +202,7 @@ padding: 20px 0 20px 16px;
 /*******************   Main *********************/
 .main-container{
 grid-area: main;
-padding: 20px 0;
+padding: 10px 0;
 }
 
 .main-title{
