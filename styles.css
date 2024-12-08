@@ -271,7 +271,7 @@ padding: 20px 0;
     stroke-width: 16px;
     stroke-dasharray: 226.2;
     stroke-dashoffset: 100.2;
-    transform: translate(1Opx, 10px);
+    transform: translate(10px, 10px);
     stroke-linecap: round;
     transition: stroke-dashoffset 1s ease-in;
 }
