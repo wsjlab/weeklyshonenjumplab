@@ -58,7 +58,7 @@ body{
     background-color: var(--light);
     color: var(--text-color-primary);
     height: 100vh;
-    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 
