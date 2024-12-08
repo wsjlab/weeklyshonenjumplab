@@ -232,8 +232,11 @@ padding: 20px 0;
     border-radius: var(--border-radius-rounded);
     font-size: 28px;
     margin-bottom: 18px;
+}
 
-
+.insights .card:nth-child(1) .card-header span{
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
 }
 
 
