@@ -260,8 +260,8 @@ padding: 20px 0;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 96px;
-    height: 96px;
+    width: 86px;
+    height: 86px;
     border-radius: var(--border-radius-rounded);
 }
 
