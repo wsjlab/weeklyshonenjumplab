@@ -204,6 +204,20 @@ grid-area: main;
 padding: 20px 0;
 }
 
+.main-title{
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.insights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin-bottom: 2rem;
+}
+
+
+
 .extrabar{
 grid-area: extrabar;
 }
