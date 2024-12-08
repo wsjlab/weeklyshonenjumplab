@@ -238,7 +238,14 @@ padding: 20px 0;
     color: var(--yellow);
     border: 1px solid var(--yellow);
 }
-
+.insights .card:nth-child(2) .card-header span{
+    color: var(--fuscha);
+    border: 1px solid var(--fuscha);
+}
+.insights .card:nth-child(1) .card-header span{
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+}
 
 .extrabar{
 grid-area: extrabar;
