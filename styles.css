@@ -268,7 +268,7 @@ padding: 20px 0;
 
 .card-body svg circle{
     fill: none;
-    stroke-width: 16px;
+    stroke-width: 1px;
     stroke-dasharray: 226.2;
     stroke-dashoffset: 100.2;
     transform: translate(10px, 10px);
