@@ -229,7 +229,7 @@ padding: 20px 0;
     box-shadow: var(--box-shadow-card-2);
 }
 .card .card-header span{
-    padding: 8px;
+    padding: 18px;
     border-radius: var(--border-radius-rounded);
     font-size: 28px;
     margin-bottom: 18px;
