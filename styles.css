@@ -21,7 +21,7 @@
 --box-shadow-card-2: 8px 8px 32px var(--desaturate-cyan); 
 --box-sidebar: 2px 4px 16px var(--desaturate-cyan-2);
 
---padding-card: 28px;
+--padding-card: 2px;
 --border-radius-rounded: 50%;
 --border-radius-4: 4px;
 --border-radius-8: 8px;
