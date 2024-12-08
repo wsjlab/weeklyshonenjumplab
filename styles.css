@@ -242,7 +242,7 @@ padding: 20px 0;
     color: var(--fuscha);
     border: 1px solid var(--fuscha);
 }
-.insights .card:nth-child(1) .card-header span{
+.insights .card:nth-child(3) .card-header span{
     color: var(--cyan);
     border: 1px solid var(--cyan);
 }
