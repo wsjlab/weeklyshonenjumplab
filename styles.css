@@ -293,13 +293,13 @@ padding: 20px 0;
 grid-area: extrabar;
 }
 
-.stoke-fuscha{
+.stroke-fuscha{
     stroke:var(--fuscha)
 }
-.stoke-yellow{
+.stroke-yellow{
     stroke:var(--yellow)
 }
-.stoke-cyan{
+.stroke-cyan{
     stroke:var(--cyan)
 }
 
