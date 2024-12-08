@@ -266,7 +266,7 @@ padding: 20px 0;
     border-radius: var(--border-radius-rounded);
 }
 
-.card-body .card-progress svg circle{
+.card-body svg circle{
     fill: none;
     stroke-width: 18px;
     stroke-dasharray: 226.2;
