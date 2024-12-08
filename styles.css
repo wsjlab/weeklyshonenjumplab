@@ -273,10 +273,37 @@ padding: 20px 0;
     transform: translate(1Opx, 10px);
     stroke-linecap: round;
     transition: stroke-dashoffset 1s ease-in;
-    stroke: red;
 }
 
 .extrabar{
 grid-area: extrabar;
 }
 
+.stoke-fuscha{
+    stroke:var(--fuscha)
+}
+.stoke-yellow{
+    stroke:var(--yellow)
+}
+.stoke-cyan{
+    stroke:var(--cyan)
+}
+
+.text-fuscha{
+    color:var(--fuscha)
+}
+.text-yellow{
+    color:var(--yellow)
+}
+.text-cyan{
+    color:var(--cyan)
+}
+.bg-fuscha{
+    background-color:var(--fuscha)
+}
+.bg-yellow{
+    background-color:var(--yellow)
+}
+.bg-cyan{
+    background-color:var(--cyan)
+}
