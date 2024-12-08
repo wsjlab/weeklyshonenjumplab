@@ -232,7 +232,7 @@ padding: 20px 0;
     padding: 18px;
     border-radius: var(--border-radius-rounded);
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 .insights .card:nth-child(1) .card-header span{
