@@ -247,6 +247,35 @@ padding: 20px 0;
     border: 1px solid var(--cyan);
 }
 
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+.card-body .card-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: var(--border-radius-rounded);
+}
+
+.card-body svg circle{
+    fill: none;
+    stroke-width: 16px;
+    stroke-dasharray: 226.2;
+    stroke-dashoffset: 100.2;
+    transform: translate(1Opx, 10px);
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease-in;
+    stroke: red;
+}
+
 .extrabar{
 grid-area: extrabar;
 }
