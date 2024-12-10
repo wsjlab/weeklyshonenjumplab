@@ -400,6 +400,13 @@ transition: background-color 0.3s ease-in-out;
 .header-right .toggle-theme .profile-info {
 font-size: 16px;
 }
+.profile-image{
+    width: 64px;
+    display: flex;
+    align-items: center;
+    margin-right: var(--border-radius-rounded);
+    overflow: hidden;
+}
 
 
 .stroke-fuscha{
