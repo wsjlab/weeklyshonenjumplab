@@ -327,6 +327,19 @@ padding: 20px 0;
 
 }
 
+.recent-orders tbody td,
+.recent-orders thead th{
+    padding: 12px 24px;
+}
+
+.recent-orders table tbody tr:nth-child(2n+1){
+background-color: var(--desaturate-fuscha-2);
+}
+
+.recent-orders tbody tr:hover{
+    background-color: var(--desaturate-cyan-2);
+}
+
 
 .extrabar{
 grid-area: extrabar;
