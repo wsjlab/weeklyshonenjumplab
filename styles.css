@@ -400,6 +400,33 @@ transition: background-color 0.3s ease-in-out;
 .header-right .toggle-theme .profile-info {
 font-size: 16px;
 }
+
+.recent-updates{
+    background-color: var(--white);
+    border-radius: var(--border-radius-card);
+    padding: var(--padding-card);
+    box-shadow: var(--box-shadow-card);
+    transition: 0.3s ease-in-out ;
+    margin-bottom: 2rem;
+}
+
+.recent-updates:hover{
+    box-shadow: var(--box-shadow-card-2);
+}
+.recent-updates h2{
+  margin-bottom: 24px;  
+}
+
+.recent-updates .update{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
 .profile-image{
     width: 64px;
     display: flex;
