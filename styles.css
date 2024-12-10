@@ -495,7 +495,7 @@ box-shadow: 4px 4px 2px var(--desaturate-cyan);
 }
 
 
-.profile-image{
+.profile-image {
     width: 64px;
     display: flex;
     align-items: center;
