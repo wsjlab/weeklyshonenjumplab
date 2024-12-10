@@ -289,28 +289,28 @@ padding: 20px 0;
 }
 
 
-.recent-order{
+.recent-orders{
     margin-top: 4rem;
 }
-.recent-order .ro-title{
+.recent-orders .ro-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.recent-order .ro-title a{
+.recent-orders .ro-title a{
     font-size: 16px;
     font-weight: 600;
     transition: 0.3s ease-in;
     padding-right: 28px;
 }
 
-.recent-order .ro-title a:hover{
+.recent-orders .ro-title a:hover{
     color: var(--fuscha);
 }
 
-.recent-order table{
+.recent-orders table{
     width: 100%;
     background-color: var(--white);
     padding: var(--padding-card);
@@ -322,6 +322,10 @@ padding: 20px 0;
     border-spacing: 0;
 }
 
+.recent-orders table:hover{
+    box-shadow: var(--box-shadow-card-2);
+
+}
 
 
 .extrabar{
