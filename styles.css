@@ -376,6 +376,7 @@ transition: background-color 0.3s ease-in-out;
     font-size: 20px;
     padding: 4px 8px;
     display: flex;
+    align-items: center;
     justify-content: center;
     transition: 0.3s ease-in;
 }
