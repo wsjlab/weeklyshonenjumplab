@@ -332,6 +332,10 @@ padding: 20px 0;
     padding: 12px 24px;
 }
 
+.recent-orders table tbody tr{
+    transition: 0.15s ease-in;
+    }
+
 .recent-orders table tbody tr:nth-child(2n+1){
 background-color: var(--desaturate-fuscha-2);
 }
