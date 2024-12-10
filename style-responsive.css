@@ -11,7 +11,7 @@
   .main-container .insights{
     grid-template-columns: 1fr;
   }
-}
+
 
 .main-container .recent-orders{
     position: absolute;
@@ -31,4 +31,6 @@
   display: none;  
 }
 
+
+}
 /* media >268px*/
