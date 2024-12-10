@@ -390,6 +390,18 @@ transition: background-color 0.3s ease-in-out;
     color: var(--light);   
 }
 
+.header-right .profile{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right .toggle-theme .profile-info {
+font-size: 16px;
+}
+
+
 .stroke-fuscha{
     stroke:var(--fuscha)
 }
