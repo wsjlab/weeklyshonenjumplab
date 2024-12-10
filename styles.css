@@ -449,6 +449,35 @@ analytics .order:hover{
     box-shadow: var(--box-shadow-card-2);
 }
 
+.analytics .order .order-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+}
+
+.analytics .order .order-details small{
+   font-size: 14px;
+
+}
+
+.analytics .new-product{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px; 
+    border-radius: var(--border-radius-12);
+    border : 1px solid transparent;
+    border-color:var(--fuscha) ;
+    text-transform: uppercase;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-in;
+}
+
+
 .analytics .order:nth-of-type(1) .order-icon{
     color: var(--cyan);
 }
