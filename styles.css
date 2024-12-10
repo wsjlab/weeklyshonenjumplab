@@ -508,30 +508,30 @@ box-shadow: 4px 4px 2px var(--desaturate-cyan);
 
 
 .stroke-fuscha{
-    stroke:var(--fuscha)
+    stroke:var(--fuscha);
 }
 .stroke-yellow{
-    stroke:var(--yellow)
+    stroke:var(--yellow);
 }
 .stroke-cyan{
-    stroke:var(--cyan)
+    stroke:var(--cyan);
 }
 
 .text-fuscha{
-    color:var(--fuscha)
+    color:var(--fuscha);
 }
 .text-yellow{
-    color:var(--yellow)
+    color:var(--yellow);
 }
 .text-cyan{
-    color:var(--cyan)
+    color:var(--cyan);
 }
 .bg-fuscha{
-    background-color:var(--fuscha)
+    background-color:var(--fuscha);
 }
 .bg-yellow{
-    background-color:var(--yellow)
+    background-color:var(--yellow);
 }
 .bg-cyan{
-    background-color:var(--cyan)
+    background-color:var(--cyan);
 }
