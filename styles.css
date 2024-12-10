@@ -344,9 +344,50 @@ background-color: var(--desaturate-fuscha-2);
     background-color: var(--desaturate-cyan-2)!important;
 }
 
-
+/*********EXTRABAR***************/
 .extrabar{
 grid-area: extrabar;
+padding: 20px 40px 20px 0;
+transition: background-color 0.3s ease-in-out;
+}
+
+.extrabar .header-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+
+}
+
+.header-right .toggle-menu-btn{
+    display: none;
+}
+.header-right .toggle-theme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--desaturate-cyan);
+    border-radius: var(--border-radius-8);
+    cursor: pointer;
+}
+
+.header-right .toggle-theme span{
+    font-size: 20px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease-in;
+}
+
+.header-right .toggle-theme span:hover{
+    background-color: var(--desaturate-fuscha);
+    border-radius: var(--border-radius-8);
+}
+.header-right .toggle-theme span.active{
+    background-color: var(--fuscha);
+    border-radius: var(--border-radius-8);
+    color: var(--light);   
 }
 
 .stroke-fuscha{
