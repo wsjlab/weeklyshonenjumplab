@@ -476,6 +476,12 @@ analytics .order:hover{
     user-select: none;
     transition: 0.3s ease-in;
 }
+.analytics .new-product:hover{
+background-color: var(--fuscha);
+color: var(--light);
+border-color: var(--desaturate-fuscha);
+box-shadow: 4px 4px 2px var(--desaturate-cyan);
+}
 
 
 .analytics .order:nth-of-type(1) .order-icon{
