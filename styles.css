@@ -289,6 +289,41 @@ padding: 20px 0;
 }
 
 
+.recent-order{
+    margin-top: 4rem;
+}
+.recent-order .ro-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.recent-order .ro-title a{
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    padding-right: 28px;
+}
+
+.recent-order .ro-title a:hover{
+    color: var(--fuscha);
+}
+
+.recent-order table{
+    width: 100%;
+    background-color: var(--white);
+    padding: var(--padding-card);
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow-card);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    border-spacing: 0;
+}
+
+
+
 .extrabar{
 grid-area: extrabar;
 }
