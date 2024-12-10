@@ -1,0 +1,18 @@
+/* media <1200px*/
+@media screen and (max-width:1200x){
+  .dashboard-container{
+    grid-template-columns: 1fr,6fr,5fr;
+    gap: 2rem;
+  }
+  .main-sidebar{
+    width: auto;
+    padding-left: 4px;
+  }
+  .main-container .insights{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* media >268px*/
