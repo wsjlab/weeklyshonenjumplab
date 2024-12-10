@@ -13,6 +13,22 @@
   }
 }
 
+.main-container .recent-orders{
+    position: absolute;
+    width: 85%;
+    padding-bottom: 4rem;
+}
 
+.aside-header .brand{
+    padding-left: 1rem;
+
+}
+.brand h3{
+    display: none;
+}
+
+.sidebar .item span:not(.material-icons-sharp){
+  display: none;  
+}
 
 /* media >268px*/
