@@ -1,5 +1,5 @@
 /* media <1200px*/
-@media screen and (max-width:1200x){
+@media screen and (max-width:1200px){
   .dashboard-container{
     grid-template-columns: 1fr,6fr,5fr;
     gap: 2rem;
