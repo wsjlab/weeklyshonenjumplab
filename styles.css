@@ -499,6 +499,8 @@ box-shadow: 4px 4px 2px var(--desaturate-cyan);
     width: 64px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-right: 16px;
     margin-right: var(--border-radius-rounded);
     overflow: hidden;
 }
