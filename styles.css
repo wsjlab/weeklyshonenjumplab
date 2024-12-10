@@ -337,7 +337,7 @@ background-color: var(--desaturate-fuscha-2);
 }
 
 .recent-orders tbody tr:hover{
-    background-color: var(--desaturate-cyan-2);
+    background-color: var(--desaturate-cyan-2)!important;
 }
 
 
