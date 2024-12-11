@@ -341,7 +341,58 @@
         </div>
     </div>
 
+    <h1>Liste des Auteurs</h1>
+    <table id="auteurs-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>oeuvre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les données seront insérées ici -->
+        </tbody>
+    </table>
+
 
     <script src="script.js"></script>
+        <!-- Inclure la bibliothèque Chart.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Inclure Supabase.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        // Initialiser Supabase  
+        const { createClient } = supabase;
+        const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co'
+        const supabaseKey = process.env.SUPABASE_KEY
+        const supabase = createClient(supabaseUrl, supabaseKey)
+       
+        
+        async function fetchAuteurs() {
+            const { data, error } = await supabase  
+                .from('auteurs')
+                .select('id, nom, oeuvre'); // Ajustez les noms de colonnes selon votre base de données
+
+            if (error) {
+                console.error('Erreur lors de la récupération des auteurs:', error);
+                return;
+            }
+
+            const tbody = document.querySelector('#auteurs-table tbody');
+            data.forEach(auteur => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${auteur.id}</td>
+                    <td>${auteur.nom}</td>
+                    <td>${auteur.oeuvre}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Appel de la fonction pour récupérer les auteurs  
+        fetchAuteurs();
+    </script>
 </body>
 </html>
