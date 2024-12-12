@@ -357,17 +357,17 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js" > </script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js" > </script>*/-->
 
-    <script type="module">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js" type="module">
         // Initialiser Supabase 
-import { createClient } from '@supabase/supabase-js'
-const SUPABASE_KEY = 'SUPABASE_CLIENT_API_KEY'
-const SUPABASE_URL = "https://hzamsiqeeziwhfpilneo.supabase.co"
-const supabase = createClient(SUPABASE_KEY, SUPABASE_KEY)
-        //const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co'
-        //const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'
-        //const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+//import { createClient } from '@supabase/supabase-js'
+//const SUPABASE_KEY = 'SUPABASE_CLIENT_API_KEY'
+//const SUPABASE_URL = "https://hzamsiqeeziwhfpilneo.supabase.co"
+//const supabase = createClient(SUPABASE_KEY, SUPABASE_KEY)
+        const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co'
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'
+        const supabase = supabase.createClient(supabaseUrl, supabaseKey);
        
         
         async function fetchAuteurs() {
