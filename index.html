@@ -177,7 +177,7 @@
                     <thead>
                         <th>id</th>
                         <th>nom</th>
-                        <th>oeuvre</th>
+                        <th>oeuvres</th>
                         <!--<th>marque</th>
                         <th>prix</th>
                         <th>statut</th>-->
@@ -375,7 +375,7 @@
                 console.error('Erreur lors de la récupération des auteurs:', error);
                 return;
             }
-            console.log(data);
+            
 
             const tbody = document.querySelector('#auteurs-table tbody');
             data.forEach(auteur => {
@@ -387,6 +387,7 @@
                 `;
                 tbody.appendChild(row);
             });
+            console.log(data);
         }
 
         // Appel de la fonction pour récupérer les auteurs  
