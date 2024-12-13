@@ -8,6 +8,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style-responsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js"></script>
 </head>
 <body>
     <div class="dashboard-container">
@@ -177,7 +178,7 @@
                     <thead>
                         <th>id</th>
                         <th>nom</th>
-                        <th>oeuvres</th>
+                        <th>oeuvre</th>
                         <!--<th>marque</th>
                         <th>prix</th>
                         <th>statut</th>-->
@@ -359,8 +360,9 @@
 
     <!--  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js" > </script>-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js" type="module">
+<script>
         // Initialiser Supabase 
+        const {createClient}=supabase
         const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co'
         const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'
         const supabase = supabase.createClient(supabaseUrl, supabaseKey);
@@ -378,12 +380,12 @@
             
 
             const tbody = document.querySelector('#auteurs-table tbody');
-            data.forEach(auteurs => {
+            data.forEach(auteur => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${auteurs.id}</td>
-                    <td>${auteurs.nom}</td>
-                    <td class="text-fuscha">${auteurs.oeuvre}</td>
+                    <td>${auteur.id}</td>
+                    <td>${auteur.nom}</td>
+                    <td class="text-fuscha">${auteur.oeuvre}</td>
                 `;
                 tbody.appendChild(row);
             });
