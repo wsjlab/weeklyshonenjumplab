@@ -31,7 +31,7 @@
         console.log(supabase)
         async function fetchMangaAuthors() {
             const { data, error } = await supabase  
-                .from('manga_authors')
+                .from('auteurs')
                 .select('*');
 
             if (error) {
