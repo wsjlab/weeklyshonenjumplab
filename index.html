@@ -378,12 +378,12 @@
             
 
             const tbody = document.querySelector('#auteurs-table tbody');
-            data.forEach(auteur => {
+            data.forEach(auteurs => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${auteur.id}</td>
-                    <td>${auteur.nom}</td>
-                    <td class="text-fuscha">${auteur.oeuvre}</td>
+                    <td>${auteurs.id}</td>
+                    <td>${auteurs.nom}</td>
+                    <td class="text-fuscha">${auteurs.oeuvre}</td>
                 `;
                 tbody.appendChild(row);
             });
