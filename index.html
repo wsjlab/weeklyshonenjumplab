@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js"></script>
 </head>
 <body>
-    <h1>Manga Authors</h1>
+    <h1>Authors</h1>
     <table id="authors-table" border="1">
         <thead>
             <tr>
@@ -32,28 +32,27 @@
         async function fetchMangaAuthors() {
             const { data, error } = await supabase  
                 .from('auteurs')
-                .select('*');
+                .select('id,nom,oeuvre');
 
-            if (error) {
-                console.error('Error fetching data:', error);
-                return;
-            }
+if (error) {
+    console.error('Error fetching data:', error);
+    return;
+}
 
-            const tbody = document.querySelector('#authors-table tbody');
-            data.forEach(author => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td>${author.id}</td>
-                    <td>${author.name}</td>
-                    <td>${author.nationality}</td>
-                    <td>${author.works}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-        }
+const tbody = document.querySelector('#authors-table tbody');
+data.forEach(auteur => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td>${auteur.id}</td>
+        <td>${auteur.nom}</td>
+        <td>${auteur.oeuvre}</td>
+    `;
+    tbody.appendChild(tr);
+});
+}
 
-        // Fetch and display authors on page load  
-        window.onload = fetchMangaAuthors;
-    </script>
+// Fetch and display authors on page load  
+window.onload = fetchMangaAuthors;
+</script>
 </body>
 </html>
