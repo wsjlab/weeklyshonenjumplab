@@ -94,48 +94,55 @@ display: flex;
   gap: 20px;
   padding-left: 3rem;
 }
-sidebar.item a span{
+.sidebar.item a span{
   display: inline !important;
 }
 
-  .main-container .insights{
-    grid-template-columns: 1fr;
-  }
+.dashboard-container{
+  grid-template-columns: 1fr;
+  grid-area: 'main';
+}
 
+.main-container{
+  padding: 20px 40px !important;
+}
+.main-title{
+  margin-bottom: 2rem;
+}
 
 .main-container .recent-orders{
-    position: absolute;
-    width: 85%;
-    padding-bottom: 4rem;
+    position: initial !important;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
-.aside-header .brand{
-    padding-left: 1rem;
+.recent-orders .ro-title{
+  margin-bottom: 2rem;
+}
+.recent-updates{
+  margin-bottom: 4rem;
+}
+.analytics{
+  margin-bottom: 4rem;
+}
+.analytics h2{
+  margin-bottom: 2rem;
+}
+.extrabar{
+  grid-area: auto !important;
+  padding: 20px 40px;
+}
+.extrabar .header-right{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+  padding: 16px 32px;
+  gap: 10rem;
+  box-shadow: var(--box-sidebar);
+  transition: background-color 0.3s ease-in-out;
+}
 
-}
-.brand h3{
-    display: none;
-}
-
-.sidebar .item span:not(.material-icons-sharp){
-  display: none;  
-}
-
-.sidebar .item span.message-count{
-display: flex;
-}
-
-.list-items .item a {
-    gap: 10px;
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.list-items li:last-child{
-    position: initial;
-    margin-top: 4rem;
-}
 
 }
