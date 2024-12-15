@@ -19,7 +19,7 @@ toggleTheme.addEventListener('click',changeTheme);
 function changeTheme(){
     if(body.classList.contains('dark_mode')){
         lightMode();
-    }else if(!body.classList.contains('dark_mode')){
+    }else if(!body.classList.contains('light_mode')){
         darkMode();
     }
 }
