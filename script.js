@@ -29,7 +29,7 @@ if (window.matchMedia('(prefer-color-scheme:dark)').matches) {
 }
 
 function lightMode(){
-    body.classlist.remove('dark-mode');
+    body.classList.remove('dark-mode');
     light.classList.add('active');
     dark.classList.remove('active');
 
