@@ -49,4 +49,72 @@ display: flex;
 }
 
 }
-/* media >268px*/
+/* media >768px*/
+
+@media screen and (max-width:768px){
+  .main-sidebar{
+    display: block;
+    position: fixed;
+    background-color: var(--white);
+    width: 300px;
+    padding-left: 4px;
+    box-shadow: var(--box-sidebar);
+    padding-right: 1rem;
+    left: -100%;
+    z-index: 10;
+    transition: 0.3s  cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  }
+
+  .aside-header .close{
+    display: inline;
+    padding: 4px;
+    transition: 0.3s ease-in-out;
+  }
+.aside-header.close:hover{
+  cursor: pointer;
+  background-color: var(--);
+}
+
+
+  .main-container .insights{
+    grid-template-columns: 1fr;
+  }
+
+
+.main-container .recent-orders{
+    position: absolute;
+    width: 85%;
+    padding-bottom: 4rem;
+}
+
+.aside-header .brand{
+    padding-left: 1rem;
+
+}
+.brand h3{
+    display: none;
+}
+
+.sidebar .item span:not(.material-icons-sharp){
+  display: none;  
+}
+
+.sidebar .item span.message-count{
+display: flex;
+}
+
+.list-items .item a {
+    gap: 10px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-items li:last-child{
+    position: initial;
+    margin-top: 4rem;
+}
+
+}

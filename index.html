@@ -18,6 +18,11 @@
                     <img src="images/Logo_WSJ_small.svg" alt=""/>
                     <h3> Shonen Jump Lab</h3>
                 </div>
+                <div class="close" id="closeSideBar"> 
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
             </div>
             <div class="sidebar">
                 <ul class="list-items">
@@ -179,59 +184,11 @@
                         <th>id</th>
                         <th>nom</th>
                         <th>oeuvre</th>
-                        <!--<th>marque</th>
-                        <th>prix</th>
-                        <th>statut</th>-->
+                        
                     </thead>
                     <tbody>
-                        <!--<tr>
-                            <td>12</td>
-                            <td>pc</td>
-                            <td>1234</td>
-                            <td>mike</td>
-                            <td class="text-fuscha">200</td>
-                            <td>en stock</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>pc</td>
-                            <td>1234</td>
-                            <td>mike</td>
-                            <td class="text-fuscha">200</td>
-                            <td>en stock</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>pc</td>
-                            <td>1234</td>
-                            <td>mike</td>
-                            <td class="text-fuscha">200</td>
-                            <td>en stock</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>pc</td>
-                            <td>1234</td>
-                            <td>mike</td>
-                            <td class="text-fuscha">200</td>
-                            <td>en stock</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>pc</td>
-                            <td>1234</td>
-                            <td>mike</td>
-                            <td class="text-fuscha">200</td>
-                            <td>en stock</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>pc</td>
-                            <td>1234</td>
-                            <td>mike</td>
-                            <td class="text-fuscha">200</td>
-                            <td>en stock</td>
-                        </tr>-->
+                        <!--table auteurs résultats-->
+ 
                     </tbody>
                 </table>
              </div>
@@ -342,23 +299,6 @@
         </div>
     </div>
 
-   <!-- id="auteurs-table" <h1>Liste des Auteurs</h1>
-    <table id="auteurs-table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>oeuvre</th>
-            </tr>
-        </thead>
-        <tbody> -->
-            <!-- Les données seront insérées ici -->
-        <!--  </tbody>
-        id="auteurs-table" </table> -->
-
-
-
-    <!--  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js" > </script>-->
 
 <script>
         // Initialize Supabase  
@@ -369,6 +309,7 @@
         const { createClient } = supabase;
         const supabaseClient = createClient(supabaseUrl, supabaseKey);
         console.log(supabaseClient); // Corrected from `console.alerte`
+        
 
         async function fetchMangaAuthors() {
             const { data, error } = await supabaseClient  
