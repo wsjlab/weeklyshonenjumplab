@@ -7,14 +7,14 @@ const light=toggleTheme.children[0];
 const dark=toggleTheme.children[1];
 const percentage = document.querySelectorAll('.percentage p');
 
-openSidebar.addeventlistener('click',()=>{
-    sidebar.style.Left='0%'
+openSidebar.addEventListener('click',()=>{
+    sidebar.style.Left='0%';
 });
-closeSidebar.addeventlistener('click',()=>{
-    sidebar.style.Left='-100%'  
+closeSidebar.addEventListener('click',()=>{
+    sidebar.style.Left='-100%';
 });
 
-toggleTheme.addeventlistener('click',changeTheme)
+toggleTheme.addEventListener('click',changeTheme)
 
 function changeTheme(){
     if(body.classList.contains('dark-mode')){
