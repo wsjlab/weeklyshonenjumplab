@@ -5,7 +5,7 @@ const toggleTheme=document.querySelector('.toggle-theme');
 const sidebar=document.querySelector('.main-sidebar');
 const light=toggleTheme.children[0];
 const dark=toggleTheme.children[1];
-const percentage = document.querySelectorAll('percentage p');
+const percentage = document.querySelectorAll('.percentage p');
 
 openSidebar.addEventListener('click',()=>{
     sidebar.style.left='0%';
