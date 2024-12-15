@@ -7,14 +7,14 @@ const light=toggleTheme.children[0];
 const dark=toggleTheme.children[1];
 const percentage = document.querySelectorAll('.percentage p');
 
-openSidebar.addevenlistener('click',()=>{
+openSidebar.addeventlistener('click',()=>{
     sidebar.style.Left='0%'
 });
-closeSidebar.addevenlistener('click',()=>{
+closeSidebar.addeventlistener('click',()=>{
     sidebar.style.Left='-100%'  
 });
 
-toggleTheme.addevenlistener('click',changeTheme)
+toggleTheme.addeventlistener('click',changeTheme)
 
 function changeTheme(){
     if(body.classList.contains('dark-mode')){
