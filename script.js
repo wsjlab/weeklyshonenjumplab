@@ -35,7 +35,7 @@ function lightMode(){
 
 }
 function darkMode(){
-    body.classlist.add('dark-mode');
+    body.classlist.add('.dark-mode');
     light.classList.remove('active');
     dark.classList.add('active');
 }
