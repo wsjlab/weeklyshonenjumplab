@@ -17,9 +17,9 @@ closeSidebar.addEventListener('click',()=>{
 toggleTheme.addEventListener('click',changeTheme);
 
 function changeTheme(){
-    if(body.classList.contains('dark_mode')){
+    if(body.classList.contains('dark-mode')){
         lightMode();
-    }else if(!body.classList.contains('light_mode')){
+    }else if(!body.classList.contains('dark-mode')){
         darkMode();
     }
 }
