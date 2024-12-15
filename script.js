@@ -29,13 +29,13 @@ if (window.matchMedia('(prefer-color-scheme:dark)').matches) {
 }
 
 function lightMode(){
-    body.classlist.remove('dark_mode');
+    body.classlist.remove('dark-mode');
     light.classList.add('active');
     dark.classList.remove('active');
 
 }
 function darkMode(){
-    body.classlist.add('dark_mode');
+    body.classlist.add('dark-mode');
     light.classList.remove('active');
     dark.classList.add('active');
 }
