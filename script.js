@@ -17,9 +17,9 @@ closeSidebar.addEventListener('click',()=>{
 toggleTheme.addEventListener('click',changeTheme);
 
 function changeTheme(){
-    if(body.classList.contains('.dark-mode')){
+    if(body.classList.contains('dark_mode')){
         lightMode();
-    }else if(!body.classList.contains('.dark-mode')){
+    }else if(!body.classList.contains('dark_mode')){
         darkMode();
     }
 }
@@ -29,13 +29,13 @@ if (window.matchMedia('(prefer-color-scheme:dark)').matches) {
 }
 
 function lightMode(){
-    body.classlist.remove('.dark-mode');
+    body.classlist.remove('dark_mode');
     light.classList.add('active');
     dark.classList.remove('active');
 
 }
 function darkMode(){
-    body.classlist.add('.dark-mode');
+    body.classlist.add('dark_mode');
     light.classList.remove('active');
     dark.classList.add('active');
 }
