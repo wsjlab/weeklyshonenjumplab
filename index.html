@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style-responsive.css" />
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="dashboard-container">
@@ -89,6 +90,14 @@
         </div>
         <div class="main-container">
             <h1 class="main-title">Dashboard</h1>
+
+            <h1>Classement des 10 Derniers Numéros du Weekly Shonen Jump</h1>
+            <img id="image-semaine" src="images/WSJ_Issue_Cover/WSJ_Issue_2025_01_Cover.webp" alt="Image de la semaine">
+            <input type="date" id="date-input">
+            <button onclick="fetchImage()">Afficher l'image</button>
+            <canvas id="classementChart"></canvas>
+
+
 
             <!--card-->
             <div class="insights">

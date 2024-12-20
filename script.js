@@ -39,3 +39,59 @@ function darkMode(){
     light.classList.remove('active');
     dark.classList.add('active');
 }
+
+//charts and buttons
+
+async function fetchClassement() {
+    const { data, error } = await supabase
+        .from('classement')
+        .select('*')
+        .order('numero', { ascending: false })
+        .limit(10);
+
+    if (data) {
+        const labels = data.map(item => `Numéro ${item.numero}`);
+        const classements = data.map(item => item.classement);
+        const auteurs = data.map(item => item.auteur);
+
+        const ctx = document.getElementById('classementChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Classement',
+                    data: classements,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    } else {
+        console.error(error);
+    }
+}
+
+async function fetchImage() {
+    const date = document.getElementById('date-input').value;
+    const { data, error } = await supabase
+        .from('couvertures')
+        .select('url')
+        .eq('date', date)
+        .single();
+
+    if (data) {
+        document.getElementById('image-semaine').src = data.url;
+    } else {
+        alert('Image non trouvée pour cette date.');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', fetchClassement);
