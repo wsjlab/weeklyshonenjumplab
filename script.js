@@ -42,6 +42,14 @@ function darkMode(){
 
 //charts and buttons
 
+const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co'; // Replace with your Supabase URL  
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'; // Replace with your Supabase public anon key  
+
+// Create Supabase client  
+const { createClient } = supabase;
+const supabaseClient = createClient(supabaseUrl, supabaseKey);
+console.log(supabaseClient); // Corrected from `console.alerte`
+
 async function fetchClassement() {
     const { data, error } = await supabase
         .from('classement')
@@ -54,8 +62,8 @@ async function fetchClassement() {
         const classements = data.map(item => item.classement);
         const auteurs = data.map(item => item.auteur);
 
-        const ctx = document.getElementById('classementChart').getContext('2d');
-        new Chart(ctx, {
+        const supabaseClient = document.getElementById('classementChart').getContext('2d');
+        new Chart(supabaseClient, {
             type: 'line',
             data: {
                 labels: labels,
