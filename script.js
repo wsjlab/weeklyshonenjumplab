@@ -40,13 +40,45 @@ function darkMode(){
     dark.classList.add('active');
 }
 
+//
+// Initialize Supabase  
+const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co'; // Replace with your Supabase URL  
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'; // Replace with your Supabase public anon key  
+
+// Create Supabase client  
+const { createClient } = supabase;
+const supabaseClient = createClient(supabaseUrl, supabaseKey);
+console.log(supabaseClient); // Corrected from `console.alerte`
+
+
+async function fetchMangaAuthors() {
+    const { data, error } = await supabaseClient  
+        .from('auteurs')
+        .select('id, nom, oeuvre');
+
+    if (error) {
+        console.error('Error fetching data:', error);
+        return;
+    }
+
+    const tbody = document.querySelector('#auteurs-table tbody');
+    data.forEach(auteur => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${auteur.id}</td>
+            <td>${auteur.nom}</td>
+            <td class="text-fuscha">${auteur.oeuvre}</td>
+        `;
+        tbody.appendChild(tr);
+    }); 
+}
+
+// Fetch and display authors on page load  
+window.onload = fetchMangaAuthors;
+
+
 //charts and buttons
 
-
-
-const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co';
-const supabaseKey =  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'; // Replace with your Supabase public anon key  
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 async function fetchClassement() {
     const { data, error } = await supabase
