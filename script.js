@@ -43,6 +43,7 @@ function darkMode(){
 //charts and buttons
 
 
+
 const supabaseUrl = 'https://hzamsiqeeziwhfpilneo.supabase.co';
 const supabaseKey =  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6YW1zaXFlZXppd2hmcGlsbmVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5NDg0NTUsImV4cCI6MjA0OTUyNDQ1NX0.xQMdpOzBxmpQ1zeP_kljS9IolBVTsJKqbl4g6JuhzGI'; // Replace with your Supabase public anon key  
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
