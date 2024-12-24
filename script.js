@@ -101,6 +101,7 @@ async function fetchClassement() {
                     label: 'Classement',
                     data: classements,
                     borderColor: 'rgba(75, 192, 192, 1)',
+                    borderColor:'rgb(57, 62, 70)',
                     borderWidth: 1
                 }]
             },

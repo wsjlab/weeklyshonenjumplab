@@ -221,6 +221,15 @@ padding: 20px 0;
     margin-bottom: 2rem;
 }
 
+
+.image-semaine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
 .insights .card{
     background-color: var(--white);
     padding: 28px;
