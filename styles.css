@@ -24,8 +24,8 @@
 --padding-card: 5px;
 --border-radius-rounded: 50%;
 --border-radius-4: 4px;
---border-radius-8: 8px;
---border-radius-12: 12px;
+--border-radius-8: 5px;
+--border-radius-12: 5px;
 --border-radius-card: var(--padding-card);
 }
 
