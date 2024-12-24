@@ -81,7 +81,7 @@ window.onload = fetchMangaAuthors;
 
 
 async function fetchClassement() {
-    const { data, error } = await supabase
+    const { data, error } = await supabaseClient
         .from('classement')
         .select('*')
         .order('numero', { ascending: false })
@@ -119,7 +119,7 @@ async function fetchClassement() {
 
 async function fetchImage() {
     const date = document.getElementById('date-input').value;
-    const { data, error } = await supabase
+    const { data, error } = await supabaseClient
         .from('couvertures')
         .select('url')
         .eq('date', date)
