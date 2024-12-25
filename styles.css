@@ -183,6 +183,10 @@ padding: 20px 0 20px 16px;
     font-size: 28px;
 }
 
+.item a .material-symbols-outlined{
+    font-size: 28px;
+}
+
 .item .message-count{
     background-color: var(--fuscha);
     text-align: center;
