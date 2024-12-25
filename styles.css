@@ -207,9 +207,6 @@ padding: 20px 0 20px 16px;
 .main-container{
 grid-area: main;
 padding: 20px 0;
-align-items: center;
-justify-content: space-between;
-
 }
 
 .main-title{
