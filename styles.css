@@ -127,7 +127,7 @@ padding: 20px 0 20px 16px;
     padding-right: 20px;
 }
 
-.svg-path {
+.brand .svg-path {
     fill: var(--fuscha) /* Change la couleur ici */
 }
 
