@@ -124,6 +124,7 @@ padding: 20px 0 20px 16px;
 .brand img {
     width: 38px;
     height: 38px;
+    padding-right: 20px;
 }
 
 .svg-path {
