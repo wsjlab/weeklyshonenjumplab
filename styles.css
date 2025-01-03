@@ -126,6 +126,10 @@ padding: 20px 0 20px 16px;
     height: 38px;
 }
 
+.svg-path {
+    fill: var(--fuscha) /* Change la couleur ici */
+}
+
 .brand h3 {
     font-size: 20px;
     text-transform: uppercase;
