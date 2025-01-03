@@ -132,7 +132,7 @@ padding: 20px 0 20px 16px;
     font-size: 18px;
     color: var(--fuscha);
     text-transform: uppercase;
-    vertical-align: super;
+    vertical-align: top;
 }
 
 
