@@ -130,7 +130,9 @@ padding: 20px 0 20px 16px;
 
 .brand h3 {
     font-size: 20px;
+    color: var(--fuscha);
     text-transform: uppercase;
+    vertical-align: super;
 }
 
 
