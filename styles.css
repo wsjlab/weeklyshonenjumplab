@@ -21,11 +21,11 @@
 --box-shadow-card-2: 8px 8px 32px var(--desaturate-cyan); 
 --box-sidebar: 2px 4px 16px var(--desaturate-cyan-2);
 
---padding-card: 5px;
---border-radius-rounded: 50%;
---border-radius-4: 4px;
---border-radius-8: 5px;
---border-radius-12: 5px;
+--padding-card: 8px;
+--border-radius-rounded: 25%;
+--border-radius-4: 8px;
+--border-radius-8: 8px;
+--border-radius-12: 8px;
 --border-radius-card: var(--padding-card);
 }
 
